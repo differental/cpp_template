@@ -9,6 +9,10 @@
 
 ## Cheatsheet
 
+Add packages:
+
+Modify `vcpkg.json` or `vcpkg add port <package_name_here>`
+
 Debug build:
 
 ```
