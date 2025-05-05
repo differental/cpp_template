@@ -19,6 +19,6 @@ target_link_libraries(${PROJECT_NAME} PRIVATE fmt::fmt)
 # Enable warnings
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_20)
 target_compile_options(${PROJECT_NAME} PRIVATE
-    $<$<CXX_COMPILER_ID:GNU,Clang>:-Wall -Wextra -Wpedantic>
+    $<$<CXX_COMPILER_ID:GNU,Clang>:-Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion -Wansi -Wpedantic -Werror -Wno-error=effc++>
 )
 
