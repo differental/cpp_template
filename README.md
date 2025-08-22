@@ -11,7 +11,7 @@
 
 Add packages:
 
-Modify `vcpkg.json` or `vcpkg add port <package_name_here>`
+Modify `vcpkg.json` or run `vcpkg add port <package_name_here>`. Remember to update `CMakeLists.txt` for linking.
 
 Debug build:
 
@@ -27,10 +27,10 @@ cmake --preset release
 cmake --build --preset release
 ```
 
-`clangd` setup:
+`clangd` & `clang-tidy` setup:
 
 ```
 cmake --preset debug
-cp build/debug/compile_commands.json build/compile_commands.json
+cp build/debug/compile_commands.json compile_commands.json
 ```
 
